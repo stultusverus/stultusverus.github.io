@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Add Old Text as an Argument of QComboBox::activated"
 date:   2022-08-07 18:00:00 +0900
 categories: Qt
