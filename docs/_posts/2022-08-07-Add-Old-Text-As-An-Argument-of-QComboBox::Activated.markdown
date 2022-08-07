@@ -2,7 +2,9 @@
 layout: single
 title:  "Add Old Text as an Argument of QComboBox::activated"
 date:   2022-08-07 18:00:00 +0900
-categories: Qt
+categories: 
+  - Qt
+  - C++
 ---
 So I'm making these grouped combo boxes. I want them to all have unique selections, so when the selection of one is changed, I need to add the old selection to other combo boxes and remove the new. Obviously I need to use the *QComboBox::activated* signal, but unfortunately it does not tell what the text was.
 
