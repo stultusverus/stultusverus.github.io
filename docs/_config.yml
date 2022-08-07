@@ -30,7 +30,7 @@ url: "https://stultusverus.github.io" # the base hostname & protocol for your si
 github_username: stultusverus
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
 
