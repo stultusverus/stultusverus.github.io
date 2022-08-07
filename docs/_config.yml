@@ -19,6 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: PAGINÆ STVLTORVM VERORVM
+locale: "en-US"
+name: Stultus Verus
+repository: "stultusverus/stultusverus.github.io"
+search: true
+title_separator: "-"
 email: stultusv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -28,9 +33,22 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://stultusverus.github.io" # the base hostname & protocol for your site, e.g. http://example.com
   # twitter_username: jekyllrb
 github_username: stultusverus
+author:
+  name: "Stultus Verus"
+  bio: "Who am I?" # Note: Markdown is allowed
+  location: "Kanagawa, Japan"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/stultusverus"
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
