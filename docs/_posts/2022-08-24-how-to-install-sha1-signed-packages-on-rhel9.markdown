@@ -7,7 +7,7 @@ categories:
 ---
 On RHEL 9 when installing packages through dnf sometimes you get this error:
 
-{% highlight %}
+{% highlight plaintext %}
 [SKIPPED] package-name-1-1.el9.x86_64.rpm: Already downloaded
 warning: Signature not supported. Hash algorithm SHA1 not available.
 Problem opening package package-name-1-1.el9.x86_64.rpm
@@ -18,18 +18,18 @@ Error: GPG check FAILED
 
 This is because SHA-1 has been deprecated for safety reasons on RHEL 9. If you are a package maintainer, you should consider switching to a better algorithm such as SHA-256. If you are a user and know what you are doing, you can use the following command to install SHA-1 signed packages:
 
-{% highlight bash %}
+{% highlight shell %}
 update-crypto-policies --set LEGACY
 {% endhighlight %}
 
 And don't forget to switch back after installation:
 
-{% highlight bash %}
+{% highlight shell %}
 update-crypto-policies --set DEFAULT
 {% endhighlight %}
 
 This error should only happen on RHEL 9 and later. If you are using an older version and want to disable SHA-1 signed packages, you can do this:
 
-{% highlight bash %}
+{% highlight shell %}
 update-crypto-policies --set FUTURE
 {% endhighlight %}
